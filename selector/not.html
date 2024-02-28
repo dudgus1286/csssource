@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :not(p) {
+        color: blue;
+      }
+
+      p {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1. selector(선택자)
+         1) class: 전역 속성인 클래스를 이용하기
+         2) id : 전역 속성인 아이디를 이용하기
+         3) tag : 태그 이용 (현재 페이지 내 동일한 태그에 모두 적용됨)
+         4) * : 전체 선택자
+         5) 자손(하위) : 자식과 손자.
+          부모선택자 (공백) 자식선택자 : ul *
+         6) 자식 : 부모선택자 > 자식선택자
+         7) 형제 : + 또는 ~
+          + : 선택자 + 선택자 (바로 뒤따라 오는 선택자 요소만)
+          ~ : 선택자 ~ 선택자 (뒤따라 오는 모든 선택자 요소)
+         8) 그룹 선택자 : , 사용. 다양한 선택자 요소에 동일한 디자인을 적용
+         9) 속성 선택자 : [속성명], [속성명="value"],
+        [속성명~="value"], [속성명|="value"], [속성명^="value"], [속성명$="value"], [속성명*="value"]
+        10) pseudo class : 가상클래스 (요소의 상태)
+            a 태그
+            - link : 밑줄
+            - visited : 자주색
+            - active : 빨간색
+
+            -hover : 요소에 마우스를 올리는 행동
+            -focus : 요소 중 포커스를 받게 되면 사용 가능
+
+            - disabled
+            - checked(radio, checkbox)
+            - selected(select)
+        11) pseudo class : 가상 클래스 (구조) - 자손의 순서로 찾기
+            - first-child
+            - last-child
+            - nth - child
+        12) pseudo element(가상 요소)
+            - ::before : 요소의 앞쪽에 가상 요소 생성하도록 함
+            - ::after
+            - ::marker : list 아이콘
+        13) 형태 구조 선택자 (11번과 유사) - 태그로 찾아서 맞는 순번의 요소 변경
+            - first-of-type
+            - last-of-type
+            - nth-of-type
+            - nth-last-of-type : 마지막에서 n번째 순서
+        14) 부정 선택자
+            - :not(조건) : 조건이 아닐 경우 변경
+            해당 조건일 경우도 따로 지정해야 제대로 작동함
+     -->
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <div>div element</div>
+    <a href="https://www.daum.net">Link Daum</a>
+  </body>
+</html>

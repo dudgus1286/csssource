@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      div {
+        /* 글꼴명 사이에 공백이 존재한다면 따옴표로 묶어서 표시 */
+        /* 처음 글꼴로 표현하되 안 되면 다음 글꼴로 대체 */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* font-size: 20px;
+        font-weight: bold; */
+        line-height: 1.5;
+        font-size: 30px;
+        font-style: oblique;
+      }
+
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        font
+        1) font-family : 글꼴
+            - 계열
+             (1) Serif : 바탕체
+             (2) Sans-serif : 고딕체
+             (3) Cursive : 필기체
+             (4) Monospace : 고정너비
+
+        2) font-size : 글꼴 크기
+        3) font-style : normal, italic, oblique
+        4) font-weight : 굵기
+             100 ~ 900 숫자지정, bold(==700), bolder ...
+
+        1) line-height : 줄 간격.
+            줄높이 = 글자크기 + 여백
+            고정값(px)도 가능하나 배수도 사용가능(1.4~1.7 정도가 적당)
+     -->
+    <p>font-size / font-style / font-weight / line-height / font-family</p>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi perspiciatis qui atque reprehenderit necessitatibus? Corrupti hic earum suscipit
+      laudantium. Voluptate quaerat ducimus, saepe voluptatem asperiores fuga repudiandae suscipit optio eaque adipisci repellendus, veniam animi quod
+      nemo ipsum eius, labore corrupti modi omnis aliquid voluptatibus libero ea? Possimus ducimus tempore nihil tenetur provident ipsa quod culpa
+      architecto deleniti quas minima voluptatum facere ipsam repudiandae, labore dignissimos quis officiis ratione maiores! Nostrum deserunt aliquam,
+      natus optio reiciendis velit esse autem magni ipsa minima debitis eveniet. Id eveniet architecto dolores, nobis accusamus nihil recusandae quos,
+      laudantium illo atque corrupti incidunt aliquid exercitationem dolor?
+    </div>
+    <div class="serif" style="font-family: serif">Hello World</div>
+    <div class="sans-serif" style="font-family: sans-serif">Hello World</div>
+    <div class="monospace" style="font-family: monospace">Hello World</div>
+    <div class="cursive" style="font-family: cursive">Hello World</div>
+    <p class="roboto-medium">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat dolores corrupti rerum dicta quae, iste a vitae, ex tenetur repellat
+      suscipit commodi in asperiores quis ratione animi at? Ducimus?
+    </p>
+  </body>
+</html>
