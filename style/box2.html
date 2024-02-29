@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .parent {
+      }
+
+      /* .child {
+        width: 100px;
+        height: 100px;
+        
+        background-color: orangered;
+        margin: 20px;
+        float: left;
+      } */
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: orangered;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      box model
+      - 요소의 너비 = 요소의 width + padding 양쪽의 width + border 양쪽의 width
+      - width: 100 , padding: 20 , border: 5 px 의 경우
+          => 100 + 20 + 20 + 5 + 5 = 150px 가 실제 크기
+
+      - bax-sizing: border-box;
+          => width:100을 padding, border 를 포함한 크기로 만들어줌
+    -->
+
+    <!-- 
+        width 지정하지 않으면 자식요소의 너비는 부모 요소의 가로 너비에 영향 받음
+        width 지정하면 자식요소의 너비가 부모 요소를 넘어갈 수도 있음
+
+        자식 요소의 내용이 많아지면 부모 크기를 넘어가게 됨 => 부모 크기 안에 제한을 두기 위해
+        max-width, min-width 사용
+        max-width : 커질 수 있는 최대 한계값 지정
+        min-width : 최소한의 보장하는 값 지정
+
+        margin 중복(병합)
+        1. 자식 요소들끼리 margin-bottom 과 margin-top이 겹치는 경우
+
+        margin은 수평으로 쌓일때는 병합현상이 안 일어남
+     -->
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    <div class="box"></div>
+  </body>
+</html>

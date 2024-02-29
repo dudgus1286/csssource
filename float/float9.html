@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #333;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      nav {
+        height: 500px;
+        background-color: #ccc;
+        padding: 20px;
+        float: left;
+        width: 30%;
+      }
+
+      nav li {
+        list-style-type: none;
+      }
+
+      article {
+        height: 500px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        float: left;
+        width: 70%;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <section class="clearfix">
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>London</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab possimus laudantium magni sit accusamus quasi debitis at necessitatibus,
+          esse, velit temporibus quos distinctio in facilis ipsam explicabo consectetur. Labore.
+        </p>
+        <p>
+          <!-- lorem100 -->
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda accusantium eos vitae tempore quam at obcaecati laborum odit quasi
+          iusto, officiis nulla consequuntur, sit maxime modi accusamus tempora. Reiciendis tempora vitae praesentium voluptatum cumque exercitationem
+          cum expedita debitis totam consectetur, excepturi ratione nihil quaerat aliquid, quis, impedit maxime deleniti fugiat recusandae ea!
+          Incidunt quis explicabo nihil laboriosam, ea quod qui ut? Nam ullam provident veniam quaerat ipsum. Doloremque, hic inventore quidem nulla
+          architecto omnis obcaecati nam. Amet dicta sequi eveniet neque perspiciatis cum corrupti ratione eum. Et, hic architecto consequuntur odio
+          exercitationem ea cupiditate magnam commodi eligendi pariatur modi excepturi?
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
