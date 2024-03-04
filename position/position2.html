@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .food {
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 2px solid green;
+        position: relative;
+      }
+
+      .food img {
+        float: left;
+      }
+
+      .controls a {
+        background-color: #333;
+        line-height: 50px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        /* top: 125px; */
+        top: calc(50% - 25px);
+        text-wrap: nowrap;
+      }
+
+      .prev {
+        right: 100%;
+      }
+
+      .next {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food">
+      <img src="https://placehold.co/300" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto enim, odio aut beatae soluta, libero cumque numquam quos eligendi,
+        iste alias? Vel vero, dignissimos eius dolore pariatur sed at saepe corporis nesciunt doloremque facere est accusantium odit exercitationem
+        quidem, ad ab ducimus dolor enim libero. Quia fugit recusandae aperiam?
+      </p>
+      <div class="controls">
+        <a href="" class="prev">previous project</a>
+        <a href="" class="next">next project</a>
+      </div>
+    </div>
+  </body>
+</html>

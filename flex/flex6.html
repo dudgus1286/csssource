@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+
+        border: 2px solid;
+      }
+
+      .container div {
+        width: 100px;
+        height: 100px;
+        border: 4px dashed red;
+        border-radius: 10px;
+        font-size: 30px;
+      }
+
+      .container .item:nth-child(1) {
+        background: red;
+      }
+      .container .item:nth-child(2) {
+        background: blue;
+      }
+      .container .item:nth-child(3) {
+        background: green;
+      }
+      .container .item:nth-child(4) {
+        background: purple;
+      }
+      /* flex-grow */
+      .parent1 .item:nth-child(1) {
+        flex-grow: 0;
+      }
+      .parent1 .item:nth-child(2) {
+        flex-grow: 0;
+      }
+      .parent1 .item:nth-child(3) {
+        flex-grow: 0;
+      }
+      .parent1 .item:nth-child(4) {
+        flex-grow: 1;
+      }
+      /* flex-grow */
+      .parent2 .item:nth-child(1) {
+        flex-grow: 1;
+      }
+      .parent2 .item:nth-child(2) {
+        flex-grow: 3;
+      }
+      .parent2 .item:nth-child(3) {
+        flex-grow: 1;
+      }
+      .parent2 .item:nth-child(4) {
+        flex-grow: 0;
+      }
+      /* flex-grow */
+      .parent3 .item:nth-child(1) {
+        flex-grow: 1;
+      }
+      .parent3 .item:nth-child(2) {
+        flex-grow: 2;
+      }
+      .parent3 .item:nth-child(3) {
+        flex-grow: 1;
+      }
+      .parent3 .item:nth-child(4) {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      레이아웃: 위-아래 수직 구성(스크롤 사용)
+
+      1. 수평(왼 => 오)
+        1) float
+        2) inline-block
+        3) flex
+        (1) flex 컨테이너(부모요소)에 설정하는 값
+        - flex-direction(방향) : row(기본: 왼->오), column(위->아래),
+         row-reverse(float: right와 같음), column-reverse;
+        - flex-wrap(여러줄 허용 여부) : nowrap(기본: 한줄로 고정), wrap(줄이 바뀔 때 나중에 오는 요소부터 줄바꿈),
+         wrap-reverse(줄바뀔 때 첫번째 요소부터 이동)
+        - justify-content(주 축 정렬) : flex-start(기본), flext-end(오른쪽 정렬), center(가운데 정렬),
+         space-between(첫 요소는 왼쪽 끝, 마지막 요소는 오른쪽 끝으로 몰고 나머지는 그 사이 공백에 배치),
+         space-around(모든 요소 사이에 공백 배치-가운데 배치 요소는 공백이 2배),
+         space-evenly(모든 요소 사이에 공백을 동일하게 배치)
+         주축: 요소가 배치되는 방향 (flex-direction:row 라면 가로축, flex-direction:column 라면 세로축)
+         보조축: 주축과 교차되는 축
+        - align-content(교차 축 정렬) : 교차축 공간이 있고, 주축에서 여러 줄 허용되어야 의미있음
+         stretch : 부모의 교차축에 맞춰 자식 높이가 늘어남(기본-공백 안 생김)
+         flex-start, flex-end, center, space-between, space-around, space-evenly
+        - align-items: 한 줄 일 때 정렬(align-content와 같이 사용되는 경우 align-content가 우선시 됨)
+         stretch(컨테이너 교차축을 채우기 위해 items을 늘림), flex-start, flex-end, center,
+         baseline(item을 문자 기준선에 정렬)
+        (2) flex 아이템(자식요소) 설정값
+        - order : flex item 순서 설정 - 기본값 0, 음수값 지정 가능(앞쪽으로 이동),
+         order 값이 같으면 태그 순서
+        - flex-grow : item 너비 증가 비율
+        (기본 가로 너비가 있는 경우는 배수가 정확하지 않음
+        width가 auto여야 배수가 의미 있음, 고정값일 경우 X)
+        => item이 가변너비일 때 의미가 있다
+
+     -->
+    <div class="container parent1">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+    </div>
+
+    <div class="container parent2">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+    </div>
+
+    <div class="container parent3">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, temporibus! Tempore maxime autem eius odit, aliquam corrupti recusandae
+      culpa minima nisi molestiae vero maiores provident nobis eaque eos accusantium aut.
+    </p>
+  </body>
+</html>
