@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #333338;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .main-content,
+      .sidebar {
+        background-color: #eee;
+        padding: 6px;
+        margin: 10px;
+      }
+
+      .sidebar {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum, sequi rerum omnis veritatis similique voluptas, sunt in, rem.
+          </p>
+          <img src="https://placehold.co/100x120" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates, cupiditate officiis doloremque totam quae ad quisquam ipsum vel
+            recusandae, eveniet est ipsam similique? Nesciunt ullam molestiae recusandae illum sapiente. Error, laboriosam. Aliquid reiciendis, sunt
+            ipsum dolore hic laudantium dolores quaerat corrupti cumque perferendis reprehenderit, officiis iure voluptatem unde impedit?
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates, cupiditate officiis doloremque totam quae ad quisquam ipsum vel
+            recusandae, eveniet est ipsam similique? Nesciunt ullam molestiae recusandae illum sapiente. Error, laboriosam. Aliquid reiciendis, sunt
+            ipsum dolore hic laudantium dolores quaerat corrupti cumque perferendis reprehenderit, officiis iure voluptatem unde impedit?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates, cupiditate officiis doloremque totam quae ad quisquam ipsum vel
+            recusandae, eveniet est ipsam similique? Nesciunt ullam molestiae recusandae illum sapiente. Error, laboriosam. Aliquid reiciendis, sunt
+            ipsum dolore hic laudantium dolores quaerat corrupti cumque perferendis reprehenderit, officiis iure voluptatem unde impedit?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates, cupiditate officiis doloremque totam quae ad quisquam ipsum vel
+            recusandae, eveniet est ipsam similique? Nesciunt ullam molestiae recusandae illum sapiente. Error, laboriosam. Aliquid reiciendis, sunt
+            ipsum dolore hic laudantium dolores quaerat corrupti cumque perferendis reprehenderit, officiis iure voluptatem unde impedit?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates, cupiditate officiis doloremque totam quae ad quisquam ipsum vel
+            recusandae, eveniet est ipsam similique? Nesciunt ullam molestiae recusandae illum sapiente. Error, laboriosam. Aliquid reiciendis, sunt
+            ipsum dolore hic laudantium dolores quaerat corrupti cumque perferendis reprehenderit, officiis iure voluptatem unde impedit?
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat natus vero aliquam iure odio eveniet harum</p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat natus vero aliquam</p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat natus vero aliquam iure odio eveniet harum
+            praesentium delectus accusamus quo,
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

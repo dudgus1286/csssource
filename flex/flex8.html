@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ecf0f1;
+      }
+
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      .flexbg {
+        display: flex;
+      }
+
+      .flexbg main {
+        order: 2;
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+      }
+
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+        color: white;
+      }
+
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+
+        .flexbg .sidebar {
+          width: 50%;
+        }
+
+        .flexbg .left {
+          order: 2;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque adipisci tenetur facere alias reiciendis distinctio provident magni! Quasi
+          iure delectus perspiciatis at veniam. Iste illo quaerat dicta magni repudiandae amet doloremque voluptas deleniti aspernatur rem asperiores
+          ut aperiam fugit dolore veniam mollitia, provident autem? Molestiae quos quaerat sint vitae provident dignissimos voluptas omnis enim quod
+          quisquam accusantium beatae illum minima ipsam, voluptatum distinctio. Placeat fugit magni laborum neque repellendus cupiditate minima
+          ratione! Perspiciatis fugiat a pariatur ea in maiores dicta praesentium eum natus enim sequi nihil optio, fuga rerum facilis et numquam
+          tenetur aliquam ut illo possimus repellat quae veritatis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum cupiditate assumenda omnis, ut reiciendis iste, ratione quod
+          explicabo eum eius eaque officia sunt porro. Nulla saepe corporis nesciunt voluptatum? Consequuntur optio omnis ratione quae necessitatibus
+          accusantium aliquid a ipsa eveniet illo voluptatibus asperiores commodi alias suscipit blanditiis, molestias voluptatum corrupti atque
+          dolorem temporibus! Quas facere fugiat repudiandae enim! Adipisci cupiditate dolor molestiae. Iste aspernatur est quas laudantium non odio
+          dolorem modi esse distinctio exercitationem nam ipsa iusto numquam aliquid accusamus similique, maxime aperiam nesciunt incidunt? Vel
+          nostrum doloremque enim vero reprehenderit, veniam ratione, tempore quisquam odit repudiandae culpa illo.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>
+          left Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ratione exercitationem ab fuga, iste totam architecto! Vero aut ad iste
+          sunt ab, natus quam nam voluptatem, assumenda repudiandae deserunt cumque veritatis dolorum eaque alias, quod nostrum libero iure quos
+          magnam eius. Iusto, doloribus! Harum labore doloribus, impedit rem doloremque excepturi.
+        </p>
+      </aside>
+      <aside class="sidebar right">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ratione exercitationem ab fuga, iste totam architecto! Vero aut ad iste sunt
+          ab, natus quam nam voluptatem, assumenda repudiandae deserunt cumque veritatis dolorum eaque alias, quod nostrum libero iure quos magnam
+          eius. Iusto, doloribus! Harum labore doloribus, impedit rem doloremque excepturi.
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
